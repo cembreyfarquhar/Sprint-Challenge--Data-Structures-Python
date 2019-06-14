@@ -13,6 +13,7 @@ class RingBuffer:
   def get(self):
   	result = []
   	for i in range(0, self.capacity):
-  		if self.storage[i] is not None:
-  			result.append(self.storage[i])
+  		item = self.storage[i]
+  		if item is not None:
+  			result.append(item)
   	return result
